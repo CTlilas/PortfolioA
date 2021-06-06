@@ -10,9 +10,10 @@ body{
 
 .color{
     margin: 0;
-    background: linear-gradient(0, #82c9f3, #46dee0);
+    background: linear-gradient(0, #3cd3bf, #49bedb);
     min-height: 100%;
     padding-top: 1px;
+    color: whitesmoke;
 }
 header ul{
     display: flex;
@@ -33,4 +34,80 @@ header li{
 }
 .color-white{
     color: whitesmoke;
+}
+
+/*
+ *[profile]のスタイルシート
+ */
+
+.box-main{
+    text-align: center;
+    margin: 0;
+    padding: 100px 0 130px 0;
+}
+.box-profile{
+    margin: 0 auto;
+    display: inline-flex;
+}
+.box-profile img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: solid 1px whitesmoke;
+    padding: 10px;
+}
+.item-box1{
+    margin: 50px 70px ;
+    letter-spacing: 0.3em;
+}
+.item-box1 p{
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+/*
+ *[profile-Aboutのスタイルシート]
+ */
+
+.item-list2{
+    width: 100%;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 80px auto;
+}
+.item-list2 h2{
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    margin: 0 auto;
+}
+.deco{
+    list-style: none;
+    display: inline-flex;
+    color: rgb(119, 119, 119);
+    font-size: 30px;
+    padding: 0 0 10px 0;
+}
+.deco li{
+    padding: 0 8px;
+    letter-spacing: 0.1em;
+}
+.deco img{
+    width: 100%;
+    max-width: 35px;
+    margin-top: 5px;
+}
+.item-list2 p{
+    padding: 0;
+}
+.icon-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.icon-list li img{
+    margin-right: 30px;
+    width: 100%;
+    max-width: 40px;
+
 }
