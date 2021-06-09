@@ -10,7 +10,7 @@ body{
 
 .color{
     margin: 0;
-    background: linear-gradient(0, #3cd3bf, #49bedb);
+    background: linear-gradient( #3cd3bf, #49bedb);
     min-height: 100%;
     padding-top: 1px;
     color: whitesmoke;
@@ -41,6 +41,7 @@ header li{
  */
 
 .box-main{
+    width: 100%;
     text-align: center;
     margin: 0;
     padding: 100px 0 130px 0;
@@ -50,8 +51,8 @@ header li{
     display: inline-flex;
 }
 .box-profile img{
-    width: 280px;
-    height: 280px;
+    width: 290px;
+    height: auto;
     border-radius: 50%;
     border: solid 1px whitesmoke;
     padding: 10px;
@@ -168,7 +169,7 @@ header li{
     display: block;
     float: left;
     width: 100%;
-    max-width: 348px;;
+    max-width: 348px;
     margin: 40px 150px 50px 150px;
     padding-bottom: 15px;
 }
@@ -206,23 +207,32 @@ header li{
     border-width: 20vh 0 0 100vw;
     border-color: #0ec59e transparent transparent transparent;
 }
+
+/*
+ *[contact]
+ */
+
+
 .contact-list{
     list-style: none;
     width: 100%;
-    max-width: 1076px;
-    margin: 100px;
+    max-width: 1078px;
+    margin: 150px auto;
+    overflow: hidden;
+    padding: 0;
 }
 .contact-list li{
     display: block;
     float: left;
-    max-width: 348px;
-    width: 250px;
-    padding: 30px 20px 0 20px;
+    max-width: 300px;
+    width: 100%;
+    padding-top: 30px;
     background-color: #f1f1f1;
-    margin-bottom: 200px;
-    margin-right: 10px;
-    margin-left: 180px;
-    border-top: 5px solid #0ec59e;
+    margin: 0 50px 0 150px;
+    border-top: 5px solid #0ec59e;;
+}
+.contact-list li:last-child{
+    margin-right: 0;
 }
 .contact-list img{
     width: 100%;
@@ -240,6 +250,89 @@ header li{
     text-align: center;
     font-size: 10px;
     background-color: #f1f1f1;
-    margin: 0;
     padding: 20px 0 20px 0;
+    margin-top: 300px;
+}
+
+
+/*
+ *[responsive]
+ */
+
+@media screen and (max-width: 767px){
+    body{
+        min-width: 100%;
+    }
+    .box-profile{
+        max-width: 100%;
+        display: block;
+        padding: 0 1px 0 0;
+        margin: 0;
+    }
+    .item-box1 h1{
+        font-size: 25px;
+        letter-spacing: 0.03em;
+    }
+    .item-box1 p{
+        font-size: 17px;
+        letter-spacing: 0.1em;
+    }
+    .box-main{
+        max-width: 100%;
+        padding: 60px 0;
+    }
+    .item-list2{
+        margin: 30px auto;
+    }
+    .item-list2 h2{
+        font-size: 25px;
+    }
+    .item-list2 p{
+        font-size: 15px;
+        padding: 0 7px;
+    }
+    .icon-list li img{
+        margin-right: 40px;
+    }
+    .box-projects h2{
+        font-size: 25px;
+    }
+    .works-list li{
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .works-list li:last-child{
+        margin: 30px auto;
+    }
+    .works-list li p{
+        text-align: left;
+        margin: 6px 2px 6px 30px;
+        letter-spacing: 0.05em;
+    }
+    .works-list h4{
+        text-align: left;
+        margin: 6px 2px 6px 30px;
+    }
+    .box-projects h2{
+        font-size: 25px;
+    }
+    .contact-list{
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    .contact-list li{
+        margin: 30px auto;
+        float: none;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .contact-list li:last-child{
+        margin: 0 auto;
+    }
+    .footer{
+        margin-top: 80px;
+        padding: 5px 0 5px 0;
+    }
 }
